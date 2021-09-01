@@ -1,6 +1,6 @@
 <h4 align="center">“A good programmer is someone who always looks both ways before crossing a one-way street.”</h4>
 <p align="right"><span>   </span><img align="right" src="https://i.giphy.com/media/LmNwrBhejkK9EFP504/200w.webp" alt="Programmation" width="200" /></p>
-<h3>A passionate full stack developer from India with 2+ years of experience building cloud native microservices , mobile and web apps . Code for a Cause . Open source is 🤍 . Post-graduated in Software Engineering from BITS (M. Tech) and Graduated in Electronics and Communication Engineering from GGSIPU.</h3>
+<h3>Hi 👋, I'm Shivesh . A passionate full stack developer from India with 2+ years of experience building cloud native microservices , mobile and web apps . Code for a Cause . Open source is 🤍 . Post-graduated in Software Engineering from BITS (M. Tech) and Graduated in Electronics and Communication Engineering from GGSIPU.</h3>
 <p> Welcome to my humble abode in the Digital World.. </p>
 
 [![Linkedin Badge](https://komarev.com/ghpvc/?username=shiveshnavin&label=Profile%20views&color=0e75b6&style=flat)](https://www.linkedin.com/in/shiveshnavin)
