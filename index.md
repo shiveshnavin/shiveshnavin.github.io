@@ -3,6 +3,9 @@
 <h3>Hi 👋, I'm Shivesh . A passionate full stack developer from India with 3+ years of experience building cloud native microservices , mobile and web apps . Code for a Cause . Open source is 🤍 . Post-graduated in Software Engineering from BITS (M. Tech) and Graduated in Electronics and Communication Engineering from GGSIPU (B. Tech).</h3>
 <p> Welcome to my humble abode in the Digital World.. </p>
 
+
+[![Linkedin Badge](https://komarev.com/ghpvc/?username=shiveshnavin&label=Profile%20views&color=0e75b6&style=flat)](https://www.linkedin.com/in/shiveshnavin)
+
 [![Linkedin Badge](https://komarev.com/ghpvc/?username=shiveshnavin&label=Profile%20views&color=0e75b6&style=flat)](https://www.linkedin.com/in/shiveshnavin)
 [![Linkedin Badge](https://img.shields.io/badge/-shiveshnavin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/shiveshnavin)](https://www.linkedin.com/in/shiveshnavin) [![Gmail Badge](https://img.shields.io/badge/-shiveshnavin@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:shiveshnavin@gmail.com)](mailto:shiveshnavin@gmail.com)
 
@@ -61,8 +64,21 @@
  
 <h3 align="left">Checkout My Projects</h3>
 
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) 
+
+[node-paytmpg](https://npmjs.org/package/node-paytmpg) : Does all the hardwork for you while integrating payments in any express app. Comes with inbuilt UI and REST APIs for lightning fast development and prototyping . Integrate Paytm, Razorpay, Opemmoney.
+
+[multi-db-orm](https://npmjs.org/package/multi-db-orm) : ORM for multiple SQL and NoSQL databases like firestore , MongoDB , SQlite with Sync , Backup and Restore support .
+
+![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white)
+
+[Tap Tap Tiles](https://play.google.com/store/apps/details?id=in.hoptec.kotlin101) : Tap Tap Tiles is a Simple lite and endless game completely written in kotlin.
+
+[Jigsawme Puzzles](https://play.google.com/store/apps/details?id=com.semibit.jigsawme) : Solve puzzles and challenging brain games. Explore all things that test your mental acuity, from jigsaw puzzles.
+
+[GTBH Connect](https://play.google.com/store/apps/details?id=in.hoptec.gtbhconnect) : Multilingual app for managing senior citizen patients to keep track of medicine intake, notifications, reports and much more.
+
 <h4>‍💻 ‍💻 ‍💻</h4>
-[![NPM Version](https://badge.fury.io/js/node-paytmpg.svg?style=flat)](https://npmjs.org/package/node-paytmpg)
 
 <h4>🛠️ 🛠️ 🛠️</h4>
 
