@@ -30,8 +30,10 @@
                 "Science , CBSE 10th - Govt. Boys School No.2 Tilak Nagar Delhi , 2013 (CGPA 9.6)"
         );
 
-        List<String> myWork = List.of("SDE II, PayPal, 2021 - Present","Associate Developer , SAP Labs India , 2019 - 2021");
-        List<String> myInternships = List.of("Android Developer , InstantPay , Jun - July 2018",
+        List<String> myWork = List.of("SDE II, PayPal, 2021 - Present",
+				      "Associate Developer , SAP Labs India , 2019 - 2021");
+        List<String> myInternships = List.of(
+		"Android Developer , InstantPay , Jun - July 2018",
                 "IoT Firmware Developer , Mansaa Electronics , Jun - July 2018",
                 "Firmware Developer , IoTFy Inc. , Dec 2017 - Jan 2018",
                 "TiiEDU Intern , Canvaas Softwares , Dec 2016 - Jan 2017",
