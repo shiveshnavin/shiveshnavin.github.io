@@ -1,6 +1,6 @@
 <h4 align="center">“A good programmer is someone who always looks both ways before crossing a one-way street.”</h4>
 <p align="right"><span>   </span><img align="right" src="https://i.giphy.com/media/LmNwrBhejkK9EFP504/200w.webp" alt="Programmation" width="200" /></p>
-<h3>Hi 👋, I'm Shivesh . A passionate full stack developer from India with 2+ years of experience building cloud native microservices , mobile and web apps . Code for a Cause . Open source is 🤍 . Post-graduated in Software Engineering from BITS (M. Tech) and Graduated in Electronics and Communication Engineering from GGSIPU (B. Tech).</h3>
+<h3>Hi 👋, I'm Shivesh . A passionate full stack developer from India with 3+ years of experience building cloud native microservices , mobile and web apps . Code for a Cause . Open source is 🤍 . Post-graduated in Software Engineering from BITS (M. Tech) and Graduated in Electronics and Communication Engineering from GGSIPU (B. Tech).</h3>
 <p> Welcome to my humble abode in the Digital World.. </p>
 
 [![Linkedin Badge](https://komarev.com/ghpvc/?username=shiveshnavin&label=Profile%20views&color=0e75b6&style=flat)](https://www.linkedin.com/in/shiveshnavin)
@@ -27,7 +27,7 @@
                 "Science , CBSE 10th - Govt. Boys School No.2 Tilak Nagar Delhi , 2013 (CGPA 9.6)"
         );
 
-        List<String> myWork = List.of("Associate Developer , SAP Labs India , 2019 - Present");
+        List<String> myWork = List.of("SDE II, PayPal, 2021 - Present","Associate Developer , SAP Labs India , 2019 - 2021");
         List<String> myInternships = List.of("Android Developer , InstantPay , Jun - July 2018",
                 "IoT Firmware Developer , Mansaa Electronics , Jun - July 2018",
                 "Firmware Developer , IoTFy Inc. , Dec 2017 - Jan 2018",
@@ -62,7 +62,7 @@
 <h3 align="left">Checkout My Projects</h3>
 
 <h4>‍💻 ‍💻 ‍💻</h4>
-
+[![NPM Version](https://badge.fury.io/js/node-paytmpg.svg?style=flat)](https://npmjs.org/package/node-paytmpg)
 
 <h4>🛠️ 🛠️ 🛠️</h4>
 
