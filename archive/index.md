@@ -27,7 +27,7 @@
         String name = "Shivesh Navin";
 	
         List<String> myWork = List.of(
-				"SDE II, PayPal, 2021 - Present",
+				"SDE III, PayPal, 2021 - Present",
 				"Associate Developer , SAP Labs India , 2019 - 2021");
 				
         List<String> myEducation = List.of("M. Tech from BITS Pilani , 2019 - 2021 (CGPA 8.13)",

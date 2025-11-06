@@ -1,17 +1,27 @@
+import Footer from "@/components/Footer";
 import { getLocaleProvider } from "@/locales";
 import { loadAsync } from "expo-font";
-import { Link, Slot } from "expo-router";
+import { Slot } from "expo-router";
 import React, { useEffect } from "react";
 import { Platform } from "react-native";
-import { Caption, Colors, DarkColors, TextView, Theme, ThemeContext } from 'react-native-boxes';
+import { Colors, DarkColors, Theme, ThemeContext } from 'react-native-boxes';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 
 export default function RootLayout() {
   const colorScheme = 'dark'
-  const defaultTheme = new Theme('about-me', colorScheme === 'dark' ? DarkColors : Colors)
+  const defaultTheme = new Theme('portfolio', colorScheme === 'dark' ? DarkColors : Colors)
   defaultTheme.i18n = getLocaleProvider();
   const [theme, setTheme] = React.useState<Theme>(defaultTheme);
+  let locale = ''
+
+  if (Platform.OS === 'web') {
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get('locale')?.trim();
+    if (langParam) {
+      locale = langParam;
+    }
+  }
 
   useEffect(() => {
     const localeProvider = getLocaleProvider();
@@ -19,7 +29,7 @@ export default function RootLayout() {
       t.i18n = localeProvider;
       return t
     });
-  }, []);
+  }, [locale]);
 
   useEffect(() => {
     if (Platform.OS === 'web') {
@@ -48,27 +58,7 @@ function Render({ theme }: { theme: Theme }) {
   return (
     <ThemeContext.Provider value={theme} >
       <Slot />
-
-      <TextView
-        style={{
-          position: 'absolute',
-          bottom: 0,
-          left: 0,
-          right: 0,
-          zIndex: 1000,
-          textAlign: 'center',
-          backgroundColor: theme.colors.accent
-        }}
-      >
-        <Caption style={{
-          color: theme.colors.text,
-        }}>{`${theme.i18n.t('common.footer_1')}`}&nbsp;
-          <Link
-            style={{ textDecorationLine: 'underline', marginStart: 1 }}
-            href="https://www.npmjs.com/package/react-native-boxes">react-native-boxes</Link> <br />
-          {`${theme.i18n.t('common.footer_2')}`}
-        </Caption>
-      </TextView>
+      <Footer />
     </ThemeContext.Provider>
   )
 }

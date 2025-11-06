@@ -3,8 +3,64 @@
         "footer_1": "Fun Fact : This website is built with",
         "footer_2": "A UI SDK which is also made by me 😁"
     },
+    "toolbar": {
+        "view_in": "View in",
+        "select_language": "Select Language"
+    },
     "home": {
         "name": "Shivesh Navin",
         "subtitle": "Welcome to my humble abode in the Digital World !"
+    },
+    "about": {
+        "title": "About Me",
+        "description": "Hi 👋, I'm Shivesh. A passionate full stack developer from India with 6+ years of experience building cloud native microservices, mobile and web apps. Code for a Cause. Open source is 🤍. Currently working as SDE III @ PayPal. Post-graduated in Software Engineering from BITS (M. Tech) and Graduated in Electronics and Communication Engineering from GGSIPU (B. Tech).",
+        "quote": "\"A good programmer always looks both ways before crossing a one-way street.\""
+    },
+    "contact": {
+        "title": "Contact",
+        "email": "Email",
+        "resume": "Resume",
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
+        "location": "Currently in Bangalore, India"
+    },
+    "work": {
+        "title": "Work Experience",
+        "paypal": "SDE III, PayPal",
+        "paypal_duration": "2021 - Present",
+        "paypal_desc": "Building cloud native microservices and scalable applications",
+        "sap": "Associate Developer, SAP Labs India",
+        "sap_duration": "2019 - 2021",
+        "sap_desc": "Full stack development and enterprise solutions"
+    },
+    "education": {
+        "title": "Education",
+        "mtech": "M. Tech from BITS Pilani",
+        "mtech_duration": "2019 - 2021 (CGPA 8.13)",
+        "mtech_desc": "Software Engineering",
+        "btech": "B. Tech from GGSIPU Delhi",
+        "btech_duration": "2015 - 2019 (CGPA 9.01)",
+        "btech_desc": "Electronics and Communication Engineering"
+    },
+    "projects": {
+        "title": "Featured Projects",
+        "node_paytmpg": "node-paytmpg",
+        "node_paytmpg_type": "NPM Package",
+        "node_paytmpg_desc": "Payment integration library for Express apps with built-in UI and REST APIs",
+        "multi_db_orm": "multi-db-orm",
+        "multi_db_orm_type": "NPM Package",
+        "multi_db_orm_desc": "ORM for multiple SQL and NoSQL databases with sync and backup support",
+        "cuface": "Cuface",
+        "cuface_type": "Node.js Web App",
+        "cuface_desc": "Anonymous public feedback website developed in one night",
+        "tap_tap_tiles": "Tap Tap Tiles",
+        "tap_tap_tiles_type": "Android Game",
+        "tap_tap_tiles_desc": "Simple endless game written in Kotlin",
+        "iot_blockchain": "IoT Blockchain",
+        "iot_blockchain_type": "Arduino/IoT",
+        "iot_blockchain_desc": "Blockchain network over IoT for decentralized communication"
+    },
+    "skills": {
+        "title": "Skills & Technologies"
     }
 }

@@ -6,6 +6,20 @@ import es from './es.json';
 import hi from './hi.json';
 import hinglish from './hinglish.json';
 
+export const SupportedLanguages = [
+    {
+        code: 'en',
+        label: 'English'
+    }, {
+        code: 'es',
+        label: 'Español'
+    }, {
+        code: 'hi',
+        label: 'हिन्दी'
+    }, {
+        code: 'hinglish',
+        label: 'Hinglish'
+    }]
 
 export function getLocaleProvider(locale = 'en'): I18n {
     const I18nProvider = new I18nEngine({
@@ -14,16 +28,29 @@ export function getLocaleProvider(locale = 'en'): I18n {
         hinglish,
         es
     });
+    I18nProvider.enableFallback = true;
     I18nProvider.missingBehavior = "guess";
+
+    let tOriginal = I18nProvider.t.bind(I18nProvider)
+    I18nProvider.t = (scope, options) => {
+        if (scope == undefined)
+            return ''
+        if (typeof scope == 'string') {
+            if (scope.startsWith("{{") && scope.endsWith("}}")) {
+                return scope.replace("{{", "").replace("}}", "")
+            }
+        }
+        return tOriginal(scope, options)
+    }
 
     if (Platform.OS === 'web') {
         const urlParams = new URLSearchParams(window.location.search);
         const langParam = urlParams.get('locale')?.trim();
         if (langParam) {
             I18nProvider.locale = langParam;
-            I18nProvider.defaultLocale = langParam;
+            I18nProvider.defaultLocale = 'en';
         }
-        console.log("Current locale:", I18nProvider);
     }
+
     return I18nProvider as unknown as I18n;
 }
