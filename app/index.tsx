@@ -9,7 +9,7 @@ import { SupportedLanguages } from "@/locales";
 import { router } from "expo-router";
 import React, { useContext } from "react";
 import { useWindowDimensions } from "react-native";
-import { BottomSheet, DividerView, HBox, KeyboardAvoidingScrollView, ThemeContext, TransparentButton, VBox, VPage } from "react-native-boxes";
+import { BottomSheet, CardView, DividerView, HBox, KeyboardAvoidingScrollView, ThemeContext, TransparentButton, VBox, VPage } from "react-native-boxes";
 
 export default function Home() {
     const theme = useContext(ThemeContext);
@@ -24,21 +24,28 @@ export default function Home() {
             for (let i = 0; i < children.length; i += 2) {
                 rows.push(
                     <HBox key={i} style={{ justifyContent: 'space-between', marginBottom: theme.dimens.space.md }}>
-                        <VBox style={{ flex: 1, marginRight: i + 1 < children.length ? theme.dimens.space.md : 0 }}>
+                        <CardView style={{ flex: 1, marginRight: i + 1 < children.length ? theme.dimens.space.md : 0 }}>
                             {children[i]}
-                        </VBox>
+                        </CardView>
                         {i + 1 < children.length && (
-                            <VBox style={{ flex: 1, marginLeft: theme.dimens.space.md }}>
+                            <CardView style={{ flex: 1, marginLeft: theme.dimens.space.md }}>
                                 {children[i + 1]}
-                            </VBox>
+                            </CardView>
                         )}
                     </HBox>
                 );
             }
             return <>{rows}</>;
         } else {
-            // Mobile: 1 card per row
-            return <VBox>{children}</VBox>;
+            let rows = [];
+            for (let i = 0; i < children.length; i++) {
+                rows.push(
+                    <CardView key={i}>
+                        {children[i]}
+                    </CardView>
+                );
+            }
+            return <>{rows}</>;
         }
     };
 

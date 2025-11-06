@@ -50,32 +50,7 @@ export default function Contact() {
                     />
                 </HBox>
 
-                <HBox style={{
-                    flexWrap: 'wrap',
-                    justifyContent: 'space-between',
-                    marginTop: theme.dimens.space.md
-                }}>
-                    <TransparentButton
-                        text="contact.github"
-                        icon="github"
-                        style={{
-                            flex: 1,
-                            margin: theme.dimens.space.xs,
-                            color: theme.colors.warning
-                        }}
-                        onPress={() => openLink('https://github.com/shiveshnavin')}
-                    />
-                    <TransparentButton
-                        text="contact.linkedin"
-                        icon="linkedin"
-                        style={{
-                            flex: 1,
-                            margin: theme.dimens.space.xs,
-                            color: theme.colors.accent
-                        }}
-                        onPress={() => openLink('https://www.linkedin.com/in/shiveshnavin')}
-                    />
-                </HBox>
+
 
                 <HBox style={{
                     alignItems: 'center',

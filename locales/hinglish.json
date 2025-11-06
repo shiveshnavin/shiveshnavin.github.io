@@ -1,10 +1,66 @@
 {
     "common": {
-        "footer_1": "Fun Fact : Ye website banaya gaya hai",
-        "footer_2": "UI SDK ke saath jo maine hi banaya hai 😁"
+        "footer_1": "Fun Fact: Ye website banayi gayi hai",
+        "footer_2": "Ek UI SDK ke saath jo maine bhi banaya hai 😁"
+    },
+    "toolbar": {
+        "view_in": "Mein dekho",
+        "select_language": "Language choose karo"
     },
     "home": {
         "name": "Shivesh Navin",
-        "subtitle": "Is Digital duniya ke mere ghar mein aapka swagat hai !"
+        "subtitle": "Digital World mein mere humble abode mein welcome!"
+    },
+    "about": {
+        "title": "Mere baare mein",
+        "description": "Hi 👋, main Shivesh hun. India ka ek passionate full stack developer with 6+ years ka experience cloud native microservices, mobile aur web apps banane mein. Code for a Cause. Open source hai 🤍. Currently PayPal mein SDE III ke role mein working. BITS se Software Engineering mein post-graduated (M. Tech) aur GGSIPU se Electronics and Communication Engineering mein graduated (B. Tech).",
+        "quote": "\"Ek good programmer hamesha one-way street cross karne se pehle both ways dekhta hai.\""
+    },
+    "contact": {
+        "title": "Contact",
+        "email": "Email",
+        "resume": "Resume",
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
+        "location": "Currently Bangalore, India mein hun"
+    },
+    "work": {
+        "title": "Work Experience",
+        "paypal": "SDE III, PayPal",
+        "paypal_duration": "2021 - Present",
+        "paypal_desc": "Cloud native microservices aur scalable applications build kar raha hun",
+        "sap": "Associate Developer, SAP Labs India",
+        "sap_duration": "2019 - 2021",
+        "sap_desc": "Full stack development aur enterprise solutions pe kaam kiya"
+    },
+    "education": {
+        "title": "Education",
+        "mtech": "BITS Pilani se M. Tech",
+        "mtech_duration": "2019 - 2021 (CGPA 8.13)",
+        "mtech_desc": "Software Engineering",
+        "btech": "GGSIPU Delhi se B. Tech",
+        "btech_duration": "2015 - 2019 (CGPA 9.01)",
+        "btech_desc": "Electronics and Communication Engineering"
+    },
+    "projects": {
+        "title": "Featured Projects",
+        "node_paytmpg": "node-paytmpg",
+        "node_paytmpg_type": "NPM Package",
+        "node_paytmpg_desc": "Express apps ke liye payment integration library with built-in UI aur REST APIs",
+        "multi_db_orm": "multi-db-orm",
+        "multi_db_orm_type": "NPM Package",
+        "multi_db_orm_desc": "Multiple SQL aur NoSQL databases ke liye ORM with sync aur backup support",
+        "cuface": "Cuface",
+        "cuface_type": "Node.js Web App",
+        "cuface_desc": "Ek raat mein banai gayi anonymous public feedback website",
+        "tap_tap_tiles": "Tap Tap Tiles",
+        "tap_tap_tiles_type": "Android Game",
+        "tap_tap_tiles_desc": "Kotlin mein likha gaya simple endless game",
+        "iot_blockchain": "IoT Blockchain",
+        "iot_blockchain_type": "Arduino/IoT",
+        "iot_blockchain_desc": "IoT pe blockchain network for decentralized communication"
+    },
+    "skills": {
+        "title": "Skills & Technologies"
     }
 }

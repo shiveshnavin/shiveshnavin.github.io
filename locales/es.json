@@ -1,9 +1,66 @@
 {
     "common": {
-        "footer_1": "Fun Fact : This website is built with",
-        "footer_2": "A UI SDK which is also made by me 😁"
+        "footer_1": "Dato curioso: Este sitio web está construido con",
+        "footer_2": "Un SDK de UI que también fue hecho por mí 😁"
+    },
+    "toolbar": {
+        "view_in": "Ver en",
+        "select_language": "Seleccionar idioma"
     },
     "home": {
-        "name": "Shivesh Navin"
+        "name": "Shivesh Navin",
+        "subtitle": "¡Bienvenido a mi humilde morada en el Mundo Digital!"
+    },
+    "about": {
+        "title": "Acerca de mí",
+        "description": "Hola 👋, soy Shivesh. Un desarrollador full stack apasionado de India con más de 6 años de experiencia construyendo microservicios nativos en la nube, aplicaciones móviles y web. Código por una causa. El código abierto es 🤍. Actualmente trabajando como SDE III @ PayPal. Posgrado en Ingeniería de Software de BITS (M. Tech) y Graduado en Ingeniería Electrónica y de Comunicaciones de GGSIPU (B. Tech).",
+        "quote": "\"Un buen programador siempre mira a ambos lados antes de cruzar una calle de un solo sentido.\""
+    },
+    "contact": {
+        "title": "Contacto",
+        "email": "Email",
+        "resume": "Currículum",
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
+        "location": "Actualmente en Bangalore, India"
+    },
+    "work": {
+        "title": "Experiencia laboral",
+        "paypal": "SDE III, PayPal",
+        "paypal_duration": "2021 - Presente",
+        "paypal_desc": "Construyendo microservicios nativos en la nube y aplicaciones escalables",
+        "sap": "Desarrollador asociado, SAP Labs India",
+        "sap_duration": "2019 - 2021",
+        "sap_desc": "Desarrollo full stack y soluciones empresariales"
+    },
+    "education": {
+        "title": "Educación",
+        "mtech": "M. Tech de BITS Pilani",
+        "mtech_duration": "2019 - 2021 (CGPA 8.13)",
+        "mtech_desc": "Ingeniería de Software",
+        "btech": "B. Tech de GGSIPU Delhi",
+        "btech_duration": "2015 - 2019 (CGPA 9.01)",
+        "btech_desc": "Ingeniería Electrónica y de Comunicaciones"
+    },
+    "projects": {
+        "title": "Proyectos destacados",
+        "node_paytmpg": "node-paytmpg",
+        "node_paytmpg_type": "Paquete NPM",
+        "node_paytmpg_desc": "Biblioteca de integración de pagos para aplicaciones Express con UI integrada y APIs REST",
+        "multi_db_orm": "multi-db-orm",
+        "multi_db_orm_type": "Paquete NPM",
+        "multi_db_orm_desc": "ORM para múltiples bases de datos SQL y NoSQL con soporte de sincronización y respaldo",
+        "cuface": "Cuface",
+        "cuface_type": "Aplicación web Node.js",
+        "cuface_desc": "Sitio web de comentarios públicos anónimos desarrollado en una noche",
+        "tap_tap_tiles": "Tap Tap Tiles",
+        "tap_tap_tiles_type": "Juego Android",
+        "tap_tap_tiles_desc": "Juego simple e infinito escrito en Kotlin",
+        "iot_blockchain": "IoT Blockchain",
+        "iot_blockchain_type": "Arduino/IoT",
+        "iot_blockchain_desc": "Red blockchain sobre IoT para comunicación descentralizada"
+    },
+    "skills": {
+        "title": "Habilidades y tecnologías"
     }
 }
