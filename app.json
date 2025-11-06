@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "my-web-app",
-    "slug": "my-web-app",
+    "name": "shiveshnavin",
+    "slug": "shiveshnavin",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "mywebapp",
+    "scheme": "shiveshnavin",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
