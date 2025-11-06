@@ -15,10 +15,10 @@ export default function About() {
                 <Title style={{
                     fontFamily: theme.fonts.Styled,
                     fontSize: theme.dimens.font.xl * 1.5,
-                }}>Shivesh Navin</Title>
+                }}>home.name</Title>
                 <TextView style={{
                     textAlign: 'center',
-                }}>Welcome to my humble abode in the Digital World !</TextView>
+                }}>home.subtitle</TextView>
             </Center>
         </VPage>
     );

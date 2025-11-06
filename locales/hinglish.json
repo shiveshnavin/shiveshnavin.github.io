@@ -1,1 +1,10 @@
-{}
+{
+    "common": {
+        "footer_1": "Fun Fact : Ye website banaya gaya hai",
+        "footer_2": "UI SDK ke saath jo maine hi banaya hai 😁"
+    },
+    "home": {
+        "name": "Shivesh Navin",
+        "subtitle": "Is Digital duniya ke mere ghar mein aapka swagat hai !"
+    }
+}
