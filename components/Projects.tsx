@@ -78,7 +78,7 @@ export default function Projects() {
             title: 'projects.more.title',
             subtitle: 'projects.more.type',
             description: 'projects.more.description',
-            image_url: "https://avatars.githubusercontent.com/u/16799797?v=4",
+            image_url: "https://github.com/user-attachments/assets/5b9aacd1-9d62-4c58-a6c3-05449f8a01c9",
             action: () => openLink('https://github.com/shiveshnavin?tab=repositories')
         }
     ];
@@ -94,8 +94,10 @@ export default function Projects() {
                 {/* Poster */}
                 {project.image_url && (
                     <Image
+                        resizeMode="contain"
                         source={{ uri: project.image_url }}
                         style={{
+                            backgroundColor: theme.colors.invert.forground,
                             width: '100%',
                             height: 180,
                             borderTopLeftRadius: theme.dimens.space.md,
