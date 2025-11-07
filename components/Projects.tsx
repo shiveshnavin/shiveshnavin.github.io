@@ -78,7 +78,7 @@ export default function Projects() {
             title: 'projects.more.title',
             subtitle: 'projects.more.type',
             description: 'projects.more.description',
-            image_url: "https://yt3.googleusercontent.com/ytc/AIdro_nxqRVENDdeUA7pmUNnD9tkQw1QwRQAbhT6GyBB2EfWdcac=s900-c-k-c0x00ffffff-no-rj",
+            image_url: "https://avatars.githubusercontent.com/u/16799797?v=4",
             action: () => openLink('https://github.com/shiveshnavin?tab=repositories')
         }
     ];
@@ -94,7 +94,11 @@ export default function Projects() {
                 {/* Poster */}
                 {project.image_url && (
                     <Image
-                        resizeMode="contain"
+                        resizeMode={([
+                            'projects.firestore_jdbc_driver.title',
+                            'projects.iot_blockchain.title',
+                            'projects.more.title'
+                        ].includes(project.title)) ? undefined : "contain"}
                         source={{ uri: project.image_url }}
                         style={{
                             backgroundColor: theme.colors.invert.forground,
