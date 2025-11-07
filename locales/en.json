@@ -15,7 +15,7 @@
         "title": "About Me",
         "position": "SDE III At PayPal | BITS Pilani",
         "description": "Hi 👋, I'm Shivesh. A passionate full stack developer from India with 6+ years of experience building cloud native microservices, web and mobile native apps. Post-graduated in Software Engineering from BITS (M. Tech) and Graduated in Electronics and Communication Engineering from GGSIPU (B. Tech). Do checkout some cool open source hobby projects I have built over the years down below.",
-        "quote": "\"A good programmer always looks both ways before crossing a one-way street.\""
+        "quote": "\"A good engineer always looks both ways before crossing a one-way street.\""
     },
     "contact": {
         "title": "Contact",
@@ -31,10 +31,10 @@
         "title": "Work Experience",
         "paypal": "SDE III, PayPal",
         "paypal_duration": "2021 - Present",
-        "paypal_desc": "Building cloud native microservices and scalable applications",
+        "paypal_desc": "Identity Platforms - Backend, Web and Native (Android). Working on AI based FaceID & Biometric verification and Fraud detection.",
         "sap": "Associate Developer, SAP Labs India",
         "sap_duration": "2019 - 2021",
-        "sap_desc": "Full stack development and enterprise solutions"
+        "sap_desc": "Building Cloud native microservices with full stack development and enterprise solutions"
     },
     "education": {
         "title": "Education",

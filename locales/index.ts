@@ -5,6 +5,7 @@ import en from './en.json';
 import es from './es.json';
 import hi from './hi.json';
 import hinglish from './hinglish.json';
+import ka from './ka.json';
 
 export const SupportedLanguages = [
     {
@@ -20,16 +21,22 @@ export const SupportedLanguages = [
         label: 'हिन्दी'
     },
     {
+        'code': 'ka',
+        'label': 'ಕನ್ನಡ'
+    },
+    {
         code: 'es',
         label: 'Español'
-    },]
+    },
+]
 
 export function getLocaleProvider(locale = 'en'): I18n {
     const I18nProvider = new I18nEngine({
         en,
         hi,
         hinglish,
-        es
+        es,
+        ka
     });
     I18nProvider.enableFallback = true;
     I18nProvider.missingBehavior = "guess";

@@ -1,64 +1,102 @@
 {
     "common": {
-        "footer_1": "Fun Fact: Ye website banayi gayi hai",
-        "footer_2": "Ek UI SDK ke saath jo maine bhi banaya hai 😁"
+        "footer_1": "Fun Fact: ye website bani hai using",
+        "footer_2": "Ek UI SDK jo maine khud banaya hai 😁"
     },
     "toolbar": {
-        "view_in": "Mein dekho",
-        "select_language": "Language choose karo"
+        "view_in": "Aap padh rahe hai",
+        "select_language": "Konsi bhasha m samjhau?"
     },
     "home": {
         "name": "Shivesh Navin",
-        "subtitle": "Digital World mein mere humble abode mein welcome!"
+        "subtitle": "Is Digital duniya ke mere chhote se ghar mein apka swagat hai!"
     },
     "about": {
         "title": "Mere baare mein",
-        "description": "Hi 👋, main Shivesh hun. India ka ek passionate full stack developer with 6+ years ka experience cloud native microservices, mobile aur web apps banane mein. Code for a Cause. Open source hai 🤍. Currently PayPal mein SDE III ke role mein working. BITS se Software Engineering mein post-graduated (M. Tech) aur GGSIPU se Electronics and Communication Engineering mein graduated (B. Tech).",
-        "quote": "\"Ek good programmer hamesha one-way street cross karne se pehle both ways dekhta hai.\""
+        "position": "SDE III PayPal mein | BITS Pilani",
+        "description": "Hi 👋, main Shivesh hoon. Merepe 6+ saal ka full stack dev ka experience hai in – cloud native microservices, web & mobile apps. Maine BITS se M.Tech (Software Engineering) aur GGSIPU se B.Tech (Electronics & Comm) ki hai. Neeche kuch sahi open source hobby projects jarur dekhna jo maine banaye hain.",
+        "quote": "\"Ek accha engineer hamesha one-way street cross karne se pehle dono taraf dekhta hai.\""
     },
     "contact": {
         "title": "Contact",
         "email": "Email",
         "resume": "Resume",
+        "pdf": "PDF dekho",
         "github": "GitHub",
         "linkedin": "LinkedIn",
-        "location": "Currently Bangalore, India mein hun"
+        "location_desc": "Location",
+        "location": "Abhi Bangalore, India mein hoon"
     },
     "work": {
-        "title": "Work Experience",
+        "title": "Kaam ka experience",
         "paypal": "SDE III, PayPal",
         "paypal_duration": "2021 - Present",
-        "paypal_desc": "Cloud native microservices aur scalable applications build kar raha hun",
+        "paypal_desc": "Identity Platforms - Backend, Web aur Native (Android). AI based FaceID & biometric verification aur fraud detection par kaam krta hu.",
         "sap": "Associate Developer, SAP Labs India",
         "sap_duration": "2019 - 2021",
-        "sap_desc": "Full stack development aur enterprise solutions pe kaam kiya"
+        "sap_desc": "Cloud native microservices with full stack dev aur enterprise solutions par kam tha."
     },
     "education": {
         "title": "Education",
-        "mtech": "BITS Pilani se M. Tech",
+        "mtech": "M. Tech BITS Pilani se",
         "mtech_duration": "2019 - 2021 (CGPA 8.13)",
         "mtech_desc": "Software Engineering",
-        "btech": "GGSIPU Delhi se B. Tech",
+        "btech": "B. Tech GGSIPU Delhi se",
         "btech_duration": "2015 - 2019 (CGPA 9.01)",
-        "btech_desc": "Electronics and Communication Engineering"
+        "btech_desc": "Electronics & Communication Engineering"
     },
     "projects": {
         "title": "Featured Projects",
-        "node_paytmpg": "node-paytmpg",
-        "node_paytmpg_type": "NPM Package",
-        "node_paytmpg_desc": "Express apps ke liye payment integration library with built-in UI aur REST APIs",
-        "multi_db_orm": "multi-db-orm",
-        "multi_db_orm_type": "NPM Package",
-        "multi_db_orm_desc": "Multiple SQL aur NoSQL databases ke liye ORM with sync aur backup support",
-        "cuface": "Cuface",
-        "cuface_type": "Node.js Web App",
-        "cuface_desc": "Ek raat mein banai gayi anonymous public feedback website",
-        "tap_tap_tiles": "Tap Tap Tiles",
-        "tap_tap_tiles_type": "Android Game",
-        "tap_tap_tiles_desc": "Kotlin mein likha gaya simple endless game",
-        "iot_blockchain": "IoT Blockchain",
-        "iot_blockchain_type": "Arduino/IoT",
-        "iot_blockchain_desc": "IoT pe blockchain network for decentralized communication"
+        "react_native_boxes": {
+            "title": "React native boxes",
+            "type": "npm library",
+            "description": "React Native ke reusable components ka collection"
+        },
+        "node_paytmpg": {
+            "title": "node-paytmpg",
+            "type": "npm library",
+            "description": "Express apps ke liye payment integration library, built-in UI + REST APIs ke saath"
+        },
+        "multi_db_orm": {
+            "title": "multi-db-orm",
+            "type": "npm library",
+            "description": "Multiple SQL aur NoSQL DBs ke liye ORM with sync & backup support"
+        },
+        "pipelane": {
+            "title": "Pipelane",
+            "type": "github",
+            "description": "Bahut halka Scheduler & Orchestrator jisme Agentic AI MCP support hai"
+        },
+        "tap_tap_tiles": {
+            "title": "Tap Tap Tiles",
+            "type": "android game",
+            "description": "Bahut simple Kotlin wali endless game"
+        },
+        "iot_blockchain": {
+            "title": "IoT Blockchain",
+            "type": "internet of things",
+            "description": "IoT devices par blockchain network for decentralized baat-cheet"
+        },
+        "firestore_jdbc_driver": {
+            "title": "Firestore JDBC Driver",
+            "type": "maven library",
+            "description": "Google Firestore ke liye pehla JDBC Driver jo SQL queries enable karta hai"
+        },
+        "power_manager_iot": {
+            "title": "Power Manager IoT",
+            "type": "internet of things",
+            "description": "IoT based smart power management system ghar aur office ke liye"
+        },
+        "self_hosted_object_storage": {
+            "title": "Self Hosted Object Storage",
+            "type": "github",
+            "description": "Lightweight self hosted object storage jisme GET/PUT/AUTH APIs aur PreAuthenticated URLs hain"
+        },
+        "more": {
+            "title": "Aur 140+ projects...",
+            "type": "github",
+            "description": "Aur dekhne ke liye mera GitHub profile jrur explore karna"
+        }
     },
     "skills": {
         "title": "Skills & Technologies"

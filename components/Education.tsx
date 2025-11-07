@@ -7,14 +7,14 @@ export default function Education() {
         {
             id: '1',
             title: 'education.mtech',
-            image_url: 'https://static.toiimg.com/thumb/msid-68846795,imgsize-174936,width-400,resizemode-4/68846795.jpg',
+            image_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/BITS_Pilani-Logo.svg/1200px-BITS_Pilani-Logo.svg.png',
             subtitle: 'education.mtech_duration',
             description: 'education.mtech_desc'
         },
         {
             id: '2',
             title: 'education.btech',
-            image_url: 'https://play-lh.googleusercontent.com/fiIEq9Dc4WKSR7nWF6vqJ6Xy-ZM8rTWL7GCsXbCSwAtjszENQ2W7RcqnAnfHUWFtsnw',
+            image_url: 'https://upload.wikimedia.org/wikipedia/en/f/f6/Maharaja_Surajmal_Institute_of_Technology_official_logo.jpg',
             subtitle: 'education.btech_duration',
             description: 'education.btech_desc'
         }
@@ -29,6 +29,8 @@ export default function Education() {
                 body: item.description,
                 icon: (
                     <Avatar style={{
+                        padding: theme.dimens.space.md,
+                        backgroundColor: theme.colors.invert.forground,
                         marginRight: theme.dimens.space.lg,
                         borderRadius: theme.dimens.space.md,
                         borderColor: theme.colors.text,
