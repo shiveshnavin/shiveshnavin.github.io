@@ -1,11 +1,9 @@
 import React, { useContext } from "react";
 import { Linking, Platform } from "react-native";
 import {
-    HBox,
     Icon,
-    TextView,
+    InfoRow,
     ThemeContext,
-    TransparentButton,
     VBox
 } from "react-native-boxes";
 
@@ -22,50 +20,30 @@ export default function Contact() {
 
     return (
         <VBox>
-            <HBox style={{
-                flexWrap: 'wrap',
-                justifyContent: 'space-between'
-            }}>
-                <TransparentButton
-                    text="contact.email"
-                    icon="envelope"
-                    style={{
-                        flex: 1,
-                        margin: theme.dimens.space.xs,
-                        color: theme.colors.success
-                    }}
-                    onPress={() => openLink('mailto:shiveshnavin@gmail.com')}
-                />
-                <TransparentButton
-                    text="contact.resume"
-                    icon="file-text"
-                    style={{
-                        flex: 1,
-                        margin: theme.dimens.space.xs,
-                        color: theme.colors.info
-                    }}
-                    onPress={() => openLink('https://drive.google.com/file/d/1hIwWJCh5khQQ3KoZGipvBa3CBgmciB6-/view')}
-                />
-            </HBox>
+            <InfoRow
+                icon={<Icon style={{ padding: theme.dimens.space.md }} name="envelope" />}
+                title="contact.email"
+                text="{{shiveshnavin@gmail.com}}"
+                textStyle={{
+                    color: theme.colors.accent
+                }}
+                onPress={() => openLink('mailto:shiveshnavin@gmail.com')}
+            />
+            <InfoRow
+                icon={<Icon style={{ padding: theme.dimens.space.md }} name="file-text" />}
+                title="contact.resume"
+                text="contact.pdf"
+                textStyle={{
+                    color: theme.colors.accent
+                }}
+                onPress={() => openLink('https://drive.google.com/file/d/1hIwWJCh5khQQ3KoZGipvBa3CBgmciB6-/view')}
+            />
 
-
-
-            <HBox style={{
-                alignItems: 'center',
-                justifyContent: 'center',
-                marginTop: theme.dimens.space.lg
-            }}>
-                <Icon
-                    name="map-marker"
-                    color={theme.colors.critical}
-                    style={{ marginRight: theme.dimens.space.sm }}
-                />
-                <TextView style={{
-                    textAlign: 'center'
-                }}>
-                    contact.location
-                </TextView>
-            </HBox>
+            <InfoRow
+                icon={<Icon style={{ padding: theme.dimens.space.md }} name="map-marker" />}
+                title="contact.location_desc"
+                text="contact.location"
+            />
         </VBox>
     );
 }

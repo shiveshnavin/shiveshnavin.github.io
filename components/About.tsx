@@ -28,7 +28,7 @@ export default function About() {
                         width: theme.dimens.icon.xxl * 1.5,
                         height: theme.dimens.icon.xxl * 1.5,
                         borderWidth: 3,
-                        borderColor: theme.colors.invert.text
+                        borderColor: theme.colors.text
                     }}
                     iconUrl="https://avatars.githubusercontent.com/u/16799797"
                 />

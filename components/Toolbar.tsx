@@ -25,6 +25,7 @@ export default function Toolbar({ setShowLocalSelect }: { setShowLocalSelect: (s
     return (
         <>
             <TransparentCenterToolbar
+                forgroundColor={theme.colors.text}
                 homeIcon={ViewIn as any}
                 options={[
                     {

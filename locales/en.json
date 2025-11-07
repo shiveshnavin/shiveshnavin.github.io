@@ -21,8 +21,10 @@
         "title": "Contact",
         "email": "Email",
         "resume": "Resume",
+        "pdf": "View PDF",
         "github": "GitHub",
         "linkedin": "LinkedIn",
+        "location_desc": "Location",
         "location": "Currently in Bangalore, India"
     },
     "work": {
@@ -45,21 +47,46 @@
     },
     "projects": {
         "title": "Featured Projects",
-        "node_paytmpg": "node-paytmpg",
-        "node_paytmpg_type": "NPM Package",
-        "node_paytmpg_desc": "Payment integration library for Express apps with built-in UI and REST APIs",
-        "multi_db_orm": "multi-db-orm",
-        "multi_db_orm_type": "NPM Package",
-        "multi_db_orm_desc": "ORM for multiple SQL and NoSQL databases with sync and backup support",
-        "cuface": "Cuface",
-        "cuface_type": "Node.js Web App",
-        "cuface_desc": "Anonymous public feedback website developed in one night",
-        "tap_tap_tiles": "Tap Tap Tiles",
-        "tap_tap_tiles_type": "Android Game",
-        "tap_tap_tiles_desc": "Simple endless game written in Kotlin",
-        "iot_blockchain": "IoT Blockchain",
-        "iot_blockchain_type": "Arduino/IoT",
-        "iot_blockchain_desc": "Blockchain network over IoT for decentralized communication"
+        "react_native_boxes": {
+            "title": "React native boxes",
+            "type": "npm library",
+            "description": "A collection of reusable components for React Native"
+        },
+        "node_paytmpg": {
+            "title": "node-paytmpg",
+            "type": "npm library",
+            "description": "Payment integration library for Express apps with built-in UI and REST APIs"
+        },
+        "multi_db_orm": {
+            "title": "multi-db-orm",
+            "type": "npm library",
+            "description": "ORM for multiple SQL and NoSQL databases with sync and backup support"
+        },
+        "pipelane": {
+            "title": "Pipelane",
+            "type": "github",
+            "description": "An extremely light Scheduler and Orchestrator with Agentic AI MCP support"
+        },
+        "tap_tap_tiles": {
+            "title": "Tap Tap Tiles",
+            "type": "android game",
+            "description": "Simple endless game written in Kotlin"
+        },
+        "iot_blockchain": {
+            "title": "IoT Blockchain",
+            "type": "internet of things",
+            "description": "Blockchain network over IoT for decentralized communication"
+        },
+        "firestore_jdbc_driver": {
+            "title": "Firestore JDBC Driver",
+            "type": "maven library",
+            "description": "First ever JDBC Driver for Google Firestore enabling SQL queries"
+        },
+        "power_manager_iot": {
+            "title": "Power Manager IoT",
+            "type": "internet of things",
+            "description": "IoT based smart power management system for homes and offices"
+        }
     },
     "skills": {
         "title": "Skills & Technologies"
