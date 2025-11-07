@@ -7,19 +7,21 @@ export default function Toolbar({ setShowLocalSelect }: { setShowLocalSelect: (s
     const theme = useContext(ThemeContext);
     const currentLocale = (theme.i18n as any).locale as string;
 
-    const ViewIn = (<HBox>
-        <TextView>toolbar.view_in</TextView>
+    const ViewIn = (
         <PressableView onPress={() => {
             setShowLocalSelect(true);
         }}>
-            <TextView style={{
-                fontFamily: theme.fonts.Bold,
-                color: theme.colors.accent
-            }}>
-                {SupportedLanguages.find(l => l.code === currentLocale)?.label}
-            </TextView>
-        </PressableView>
-    </HBox>)
+            <HBox>
+                <TextView>toolbar.view_in</TextView>
+                <TextView style={{
+                    fontFamily: theme.fonts.Bold,
+                    color: theme.colors.accent
+                }}>
+                    {SupportedLanguages.find(l => l.code === currentLocale)?.label}
+                </TextView>
+            </HBox>
+        </PressableView >
+    )
     return (
         <>
             <TransparentCenterToolbar

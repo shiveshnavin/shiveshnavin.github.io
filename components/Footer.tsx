@@ -23,6 +23,7 @@ export default function Footer() {
                 color: theme.colors.text,
             }}>{`${theme.i18n.t('common.footer_1')}`}&nbsp;
                 <Link
+                    target="_blank"
                     style={{ textDecorationLine: 'underline', marginStart: 1 }}
                     href="https://www.npmjs.com/package/react-native-boxes">react-native-boxes</Link> <br />
                 {`${theme.i18n.t('common.footer_2')}`}

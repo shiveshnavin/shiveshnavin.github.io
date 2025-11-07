@@ -9,7 +9,7 @@ import { SupportedLanguages } from "@/locales";
 import { router } from "expo-router";
 import React, { useContext } from "react";
 import { useWindowDimensions } from "react-native";
-import { BottomSheet, CardView, DividerView, HBox, KeyboardAvoidingScrollView, ThemeContext, TransparentButton, VBox, VPage } from "react-native-boxes";
+import { BottomSheet, CardView, DividerView, Expand, HBox, KeyboardAvoidingScrollView, ThemeContext, TransparentButton, VBox, VPage } from "react-native-boxes";
 
 export default function Home() {
     const theme = useContext(ThemeContext);
@@ -19,30 +19,55 @@ export default function Home() {
 
     const CardRow = ({ children }: { children: React.ReactNode[] }) => {
         if (isDesktop) {
-            // Desktop: 2 cards per row
-            const rows = [];
-            for (let i = 0; i < children.length; i += 2) {
-                rows.push(
-                    <HBox key={i} style={{ justifyContent: 'space-between', marginBottom: theme.dimens.space.md }}>
-                        <CardView style={{ flex: 1, marginRight: i + 1 < children.length ? theme.dimens.space.md : 0 }}>
-                            {children[i]}
-                        </CardView>
-                        {i + 1 < children.length && (
-                            <CardView style={{ flex: 1, marginLeft: theme.dimens.space.md }}>
-                                {children[i + 1]}
-                            </CardView>
-                        )}
-                    </HBox>
-                );
-            }
-            return <>{rows}</>;
+            // Desktop: 2 cards per row using flexbox with gap
+            return (
+                <VBox style={{ gap: theme.dimens.space.md }}>
+                    {Array.from({ length: Math.ceil(children.length / 2) }, (_, rowIndex) => {
+                        const startIndex = rowIndex * 2;
+                        const leftChild = children[startIndex];
+                        const rightChild = children[startIndex + 1];
+                        const keyL = (leftChild as any)?.key;
+                        const keyR = (rightChild as any)?.key;
+
+                        return (
+                            <HBox key={rowIndex} style={{ gap: theme.dimens.space.md }}>
+                                <Expand
+                                    title={`${keyL}.title`}
+                                    initialExpand={true}
+                                    leftPadding={theme.dimens.space.sm}
+                                    style={{ flex: 1 }}
+                                >
+                                    <CardView>
+                                        {leftChild}
+                                    </CardView>
+                                </Expand>
+                                {rightChild && (
+                                    <Expand
+                                        title={`${keyR}.title`}
+                                        initialExpand={true}
+                                        leftPadding={theme.dimens.space.sm}
+                                        style={{ flex: 1 }}
+                                    >
+                                        <CardView>
+                                            {rightChild}
+                                        </CardView>
+                                    </Expand>
+                                )}
+                            </HBox>
+                        );
+                    })}
+                </VBox>
+            );
         } else {
             let rows = [];
             for (let i = 0; i < children.length; i++) {
+                let key = (children[i] as any)?.key
                 rows.push(
-                    <CardView key={i}>
-                        {children[i]}
-                    </CardView>
+                    <Expand title={`${key}.title`} initialExpand={true} leftPadding={theme.dimens.space.sm} >
+                        <CardView key={i}>
+                            {children[i]}
+                        </CardView>
+                    </Expand>
                 );
             }
             return <>{rows}</>;

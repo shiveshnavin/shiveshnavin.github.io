@@ -40,6 +40,15 @@ export default function About() {
                 </Title>
                 <TextView style={{
                     textAlign: 'center',
+                    fontFamily: theme.fonts.Bold,
+                    color: theme.colors.invert.text,
+                    marginTop: theme.dimens.space.sm,
+                    opacity: 0.9
+                }}>
+                    about.position
+                </TextView>
+                <TextView style={{
+                    textAlign: 'center',
                     color: theme.colors.invert.text,
                     marginTop: theme.dimens.space.sm,
                     opacity: 0.9
@@ -49,7 +58,6 @@ export default function About() {
             </Center>
 
             <TextView style={{
-                lineHeight: 24,
                 marginBottom: theme.dimens.space.md,
                 color: theme.colors.invert.text,
                 textAlign: 'center'

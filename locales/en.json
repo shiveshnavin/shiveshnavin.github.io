@@ -13,7 +13,8 @@
     },
     "about": {
         "title": "About Me",
-        "description": "Hi 👋, I'm Shivesh. A passionate full stack developer from India with 6+ years of experience building cloud native microservices, mobile and web apps. Code for a Cause. Open source is 🤍. Currently working as SDE III @ PayPal. Post-graduated in Software Engineering from BITS (M. Tech) and Graduated in Electronics and Communication Engineering from GGSIPU (B. Tech).",
+        "position": "SDE III At PayPal | BITS Pilani",
+        "description": "Hi 👋, I'm Shivesh. A passionate full stack developer from India with 6+ years of experience building cloud native microservices, web and mobile native apps. Post-graduated in Software Engineering from BITS (M. Tech) and Graduated in Electronics and Communication Engineering from GGSIPU (B. Tech). Do checkout some cool open source hobby projects I have built over the years down below.",
         "quote": "\"A good programmer always looks both ways before crossing a one-way street.\""
     },
     "contact": {

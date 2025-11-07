@@ -10,16 +10,19 @@ export const SupportedLanguages = [
     {
         code: 'en',
         label: 'English'
-    }, {
-        code: 'es',
-        label: 'Español'
-    }, {
-        code: 'hi',
-        label: 'हिन्दी'
-    }, {
+    },
+    {
         code: 'hinglish',
         label: 'Hinglish'
-    }]
+    },
+    {
+        code: 'hi',
+        label: 'हिन्दी'
+    },
+    {
+        code: 'es',
+        label: 'Español'
+    },]
 
 export function getLocaleProvider(locale = 'en'): I18n {
     const I18nProvider = new I18nEngine({
