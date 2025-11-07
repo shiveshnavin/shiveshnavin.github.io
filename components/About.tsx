@@ -30,7 +30,7 @@ export default function About() {
                         borderWidth: 3,
                         borderColor: theme.colors.text
                     }}
-                    iconUrl="https://avatars.githubusercontent.com/u/16799797"
+                    iconUrl="https://yt3.googleusercontent.com/ytc/AIdro_nxqRVENDdeUA7pmUNnD9tkQw1QwRQAbhT6GyBB2EfWdcac=s900-c-k-c0x00ffffff-no-rj"
                 />
                 <Title style={{
                     fontFamily: theme.fonts.Styled,

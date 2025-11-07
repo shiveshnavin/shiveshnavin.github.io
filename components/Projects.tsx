@@ -3,8 +3,10 @@ import { Image, Linking, Platform } from "react-native";
 import {
     Caption,
     CardView,
+    Expand,
     HBox,
-    Icon,
+    isDesktop,
+    PressableView,
     Subtitle,
     TextView,
     ThemeContext,
@@ -52,10 +54,11 @@ export default function Projects() {
             action: () => openLink('https://github.com/shiveshnavin/pipelane-server')
         },
         {
-            title: 'projects.tap_tap_tiles.title',
-            subtitle: 'projects.tap_tap_tiles.type',
-            description: 'projects.tap_tap_tiles.description',
-            action: () => openLink('https://play.google.com/store/apps/details?id=in.hoptec.kotlin101')
+            title: 'projects.self_hosted_object_storage.title',
+            subtitle: 'projects.self_hosted_object_storage.type',
+            description: 'projects.self_hosted_object_storage.description',
+            image_url: "https://github.com/user-attachments/assets/098a2299-322c-4c31-9f28-6109a9ab0660",
+            action: () => openLink('https://github.com/shiveshnavin/self-hosted-object-storage')
         },
         {
             title: 'projects.iot_blockchain.title',
@@ -71,57 +74,63 @@ export default function Projects() {
             image_url: "https://github.com/user-attachments/assets/5b9aacd1-9d62-4c58-a6c3-05449f8a01c9",
             action: () => openLink('https://github.com/shiveshnavin/power-manager-iot')
         },
+        {
+            title: 'projects.more.title',
+            subtitle: 'projects.more.type',
+            description: 'projects.more.description',
+            image_url: "https://avatars.githubusercontent.com/u/16799797?v=4",
+            action: () => openLink('https://github.com/shiveshnavin?tab=repositories')
+        }
     ];
 
-    return (
-        <VBox style={{ gap: theme.dimens.space.md, }}>
-            {projects.map((project, index) => (
-                <CardView key={index} style={{
-                    margin: 0,
+    const Content = projects.map((project, index) => (
+        <PressableView onPress={project.action}>
+            <CardView key={index}
+                style={{
+                    margin: isDesktop() ? theme.dimens.space.md : 0,
                     padding: 0,
                     overflow: 'hidden'
                 }}>
-                    {/* Poster */}
-                    {project.image_url && (
-                        <Image
-                            source={{ uri: project.image_url }}
-                            style={{
-                                width: '100%',
-                                height: 180,
-                                borderTopLeftRadius: theme.dimens.space.md,
-                                borderTopRightRadius: theme.dimens.space.md,
-                                overflow: 'hidden'
-                            }}
-                        />
-                    )}
-                    {/* Body */}
-                    <VBox style={{ padding: theme.dimens.space.md }}>
-                        <Subtitle style={{
-                            fontWeight: '600',
-                            marginBottom: theme.dimens.space.xs
-                        }}>{project.title}</Subtitle>
-                        <Caption style={{
-                            opacity: 0.8,
-                            marginBottom: theme.dimens.space.sm
-                        }}>{project.subtitle}</Caption>
-                        <TextView style={{
-                            lineHeight: 18,
-                            opacity: 0.9
-                        }}>{project.description}</TextView>
-                        <HBox style={{
-                            justifyContent: 'flex-end',
-                            marginTop: theme.dimens.space.md
-                        }}>
-                            <Icon
-                                name="external-link"
-                                color={theme.colors.accent}
-                                style={{ cursor: 'pointer' }}
-                                onPress={project.action}
-                            />
-                        </HBox>
-                    </VBox>
-                </CardView>
-            ))}
-        </VBox>
+                {/* Poster */}
+                {project.image_url && (
+                    <Image
+                        source={{ uri: project.image_url }}
+                        style={{
+                            width: '100%',
+                            height: 180,
+                            borderTopLeftRadius: theme.dimens.space.md,
+                            borderTopRightRadius: theme.dimens.space.md,
+                            overflow: 'hidden'
+                        }}
+                    />
+                )}
+                {/* Body */}
+                <VBox style={{ padding: theme.dimens.space.md }}>
+                    <Subtitle>{project.title}</Subtitle>
+                    <TextView>{project.subtitle}</TextView>
+                    <Caption>{project.description}</Caption>
+                </VBox>
+            </CardView>
+        </PressableView>
+    ))
+
+    return (
+        <Expand title={`projects.title`}
+            initialExpand={true}
+            leftPadding={theme.dimens.space.sm} >
+            {
+                isDesktop() ? (<HBox style={{
+                    flexWrap: 'wrap',
+                    justifyContent: 'center'
+                }}>
+                    {Content}
+                </HBox>) :
+                    (
+                        <VBox style={{ gap: theme.dimens.space.md, }}>
+                            {Content}
+                        </VBox>
+                    )
+            }
+        </Expand>
     );
 }

@@ -4,7 +4,7 @@
         "footer_2": "A UI SDK which is also made by me 😁"
     },
     "toolbar": {
-        "view_in": "View in",
+        "view_in": "Viewing in",
         "select_language": "Select Language"
     },
     "home": {
@@ -86,6 +86,16 @@
             "title": "Power Manager IoT",
             "type": "internet of things",
             "description": "IoT based smart power management system for homes and offices"
+        },
+        "self_hosted_object_storage": {
+            "title": "Self Hosted Object Storage",
+            "type": "github",
+            "description": "A lightweight Self hosted Object storage with GET/PUT/AUTH APIs and PreAuthenticated URLs"
+        },
+        "more": {
+            "title": "And 140+ more projects...",
+            "type": "github",
+            "description": "Explore more open source projects on my GitHub profile"
         }
     },
     "skills": {

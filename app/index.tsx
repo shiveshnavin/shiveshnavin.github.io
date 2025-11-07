@@ -95,10 +95,10 @@ export default function Home() {
                         <Contact key="contact" />,
                         <WorkExperience key="work" />,
                         <Education key="education" />,
-                        <Projects key="projects" />,
                         <Skills key="skills" />
                     ]}
                 </CardRow>
+                <Projects key="projects" />
                 <DividerView style={{ height: theme.dimens.space.xl, backgroundColor: theme.colors.transparent }} />
 
                 <BottomSheet
