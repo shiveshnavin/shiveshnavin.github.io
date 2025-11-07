@@ -19,44 +19,48 @@ export default function Home() {
 
     const CardRow = ({ children }: { children: React.ReactNode[] }) => {
         if (isDesktop) {
-            // Desktop: 2 cards per row using flexbox with gap
-            return (
-                <VBox style={{ gap: theme.dimens.space.md }}>
-                    {Array.from({ length: Math.ceil(children.length / 2) }, (_, rowIndex) => {
-                        const startIndex = rowIndex * 2;
-                        const leftChild = children[startIndex];
-                        const rightChild = children[startIndex + 1];
-                        const keyL = (leftChild as any)?.key;
-                        const keyR = (rightChild as any)?.key;
+            const leftColumn = children.filter((_, index) => index % 2 === 0);
+            const rightColumn = children.filter((_, index) => index % 2 === 1);
 
-                        return (
-                            <HBox key={rowIndex} style={{ gap: theme.dimens.space.md }}>
+            return (
+                <HBox style={{ gap: theme.dimens.space.md }}>
+                    <VBox style={{ flex: 1, gap: theme.dimens.space.md }}>
+                        {leftColumn.map((child, index) => {
+                            const key = (child as any)?.key ?? `left-${index}`;
+                            return (
                                 <Expand
-                                    title={`${keyL}.title`}
+                                    key={key}
+                                    title={`${key}.title`}
                                     initialExpand={true}
                                     leftPadding={theme.dimens.space.sm}
-                                    style={{ flex: 1 }}
                                 >
                                     <CardView>
-                                        {leftChild}
+                                        {child}
                                     </CardView>
                                 </Expand>
-                                {rightChild && (
+                            );
+                        })}
+                    </VBox>
+                    {rightColumn.length > 0 && (
+                        <VBox style={{ flex: 1, gap: theme.dimens.space.md }}>
+                            {rightColumn.map((child, index) => {
+                                const key = (child as any)?.key ?? `right-${index}`;
+                                return (
                                     <Expand
-                                        title={`${keyR}.title`}
+                                        key={key}
+                                        title={`${key}.title`}
                                         initialExpand={true}
                                         leftPadding={theme.dimens.space.sm}
-                                        style={{ flex: 1 }}
                                     >
                                         <CardView>
-                                            {rightChild}
+                                            {child}
                                         </CardView>
                                     </Expand>
-                                )}
-                            </HBox>
-                        );
-                    })}
-                </VBox>
+                                );
+                            })}
+                        </VBox>
+                    )}
+                </HBox>
             );
         } else {
             let rows = [];

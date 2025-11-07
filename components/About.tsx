@@ -16,10 +16,13 @@ export default function About() {
             backgroundColor: theme.colors.background,
             margin: 0,
             marginBottom: theme.dimens.space.lg,
-            borderRadius: theme.dimens.space.md,
-            padding: theme.dimens.space.xl
+            borderRadius: theme.dimens.space.md
         }}>
-            <Center style={{ marginBottom: theme.dimens.space.lg }}>
+            <Center style={{
+                marginBottom: theme.dimens.space.lg,
+                paddingLeft: theme.dimens.space.xl,
+                paddingRight: theme.dimens.space.xl
+            }}>
                 <Avatar
                     style={{
                         width: theme.dimens.icon.xxl * 1.5,
@@ -34,14 +37,12 @@ export default function About() {
                     fontSize: theme.dimens.font.xl * 1.2,
                     marginTop: theme.dimens.space.md,
                     textAlign: 'center',
-                    color: theme.colors.invert.text
                 }}>
                     home.name
                 </Title>
                 <TextView style={{
                     textAlign: 'center',
                     fontFamily: theme.fonts.Bold,
-                    color: theme.colors.invert.text,
                     marginTop: theme.dimens.space.sm,
                     opacity: 0.9
                 }}>
@@ -49,7 +50,6 @@ export default function About() {
                 </TextView>
                 <TextView style={{
                     textAlign: 'center',
-                    color: theme.colors.invert.text,
                     marginTop: theme.dimens.space.sm,
                     opacity: 0.9
                 }}>
@@ -57,29 +57,34 @@ export default function About() {
                 </TextView>
             </Center>
 
-            <TextView style={{
-                marginBottom: theme.dimens.space.md,
-                color: theme.colors.invert.text,
-                textAlign: 'center'
-            }}>
-                about.description
-            </TextView>
-
-            <Center style={{
-                padding: theme.dimens.space.md,
-                backgroundColor: 'rgba(255,255,255,0.1)',
-                borderRadius: theme.dimens.space.md,
-                borderLeftWidth: 4,
-                borderLeftColor: theme.colors.accent
-            }}>
+            <Center >
                 <TextView style={{
-                    textAlign: 'center',
-                    fontStyle: 'italic',
-                    color: theme.colors.invert.text,
-                    opacity: 0.9
+                    maxWidth: 800,
+                    marginBottom: theme.dimens.space.md,
+                    marginLeft: 0,
+                    marginRight: 0,
+                    textAlign: 'center'
                 }}>
-                    about.quote
+                    about.description
                 </TextView>
+            </Center>
+            <Center >
+                <Center style={{
+                    maxWidth: 800,
+                    padding: theme.dimens.space.md,
+                    backgroundColor: 'rgba(255,255,255,0.1)',
+                    borderRadius: theme.dimens.space.md,
+                    borderLeftWidth: 4,
+                    borderLeftColor: theme.colors.accent
+                }}>
+                    <TextView style={{
+                        textAlign: 'center',
+                        fontStyle: 'italic',
+                        opacity: 0.9
+                    }}>
+                        about.quote
+                    </TextView>
+                </Center>
             </Center>
         </CardView>
     );

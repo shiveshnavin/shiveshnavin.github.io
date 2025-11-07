@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { Linking, Platform } from "react-native";
 import {
-    Expand,
     Icon,
     SimpleDatatlistViewItem,
     ThemeContext,
@@ -58,23 +57,21 @@ export default function Projects() {
     ];
 
     return (
-        <Expand title="projects.title" initialExpand={true} leftPadding={theme.dimens.space.sm} >
-            <VBox>
-                {projects.map((project) => (
-                    <SimpleDatatlistViewItem
-                        key={project.id}
-                        title={project.title}
-                        subtitle={project.subtitle}
-                        body={project.description}
-                        icon="code"
-                        onPress={project.action}
-                        action={<Icon name="external-link" />}
-                        style={{
-                            marginBottom: theme.dimens.space.sm
-                        }}
-                    />
-                ))}
-            </VBox>
-        </Expand>
+        <VBox>
+            {projects.map((project) => (
+                <SimpleDatatlistViewItem
+                    key={project.id}
+                    title={project.title}
+                    subtitle={project.subtitle}
+                    body={project.description}
+                    icon="code"
+                    onPress={project.action}
+                    action={<Icon name="external-link" />}
+                    style={{
+                        marginBottom: theme.dimens.space.sm
+                    }}
+                />
+            ))}
+        </VBox>
     );
 }
