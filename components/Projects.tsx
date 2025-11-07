@@ -78,7 +78,7 @@ export default function Projects() {
             title: 'projects.more.title',
             subtitle: 'projects.more.type',
             description: 'projects.more.description',
-            image_url: "https://github.com/user-attachments/assets/5b9aacd1-9d62-4c58-a6c3-05449f8a01c9",
+            image_url: "https://yt3.googleusercontent.com/ytc/AIdro_nxqRVENDdeUA7pmUNnD9tkQw1QwRQAbhT6GyBB2EfWdcac=s900-c-k-c0x00ffffff-no-rj",
             action: () => openLink('https://github.com/shiveshnavin?tab=repositories')
         }
     ];
