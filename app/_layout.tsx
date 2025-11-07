@@ -39,6 +39,35 @@ export default function RootLayout() {
     }
   }, []);
 
+  // Inject Firebase (CDN) for Web only, no npm install
+  useEffect(() => {
+    if (Platform.OS !== 'web') return;
+    const script = document.createElement('script');
+    script.type = 'module';
+    script.textContent = `
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-analytics.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBslrNeoyy_4j2LWxlNRI31ZU2OPJXNpco",
+  authDomain: "shiveshnavin.firebaseapp.com",
+  databaseURL: "https://shiveshnavin.firebaseio.com",
+  projectId: "firebase-shiveshnavin",
+  storageBucket: "firebase-shiveshnavin.appspot.com",
+  messagingSenderId: "787939295021",
+  appId: "1:787939295021:web:100ae73ae02e893e001da4",
+  measurementId: "G-TG5FCQ3TXY"
+};
+
+const app = initializeApp(firebaseConfig);
+try { getAnalytics(app); } catch (_) { /* analytics may be unsupported locally */ }
+    `;
+    document.head.appendChild(script);
+    return () => {
+      try { document.head.removeChild(script); } catch { }
+    };
+  }, []);
+
   loadAsync({
     'Regular': require('../assets/fonts/Regular.ttf'),
     'Bold': require('../assets/fonts/Bold.ttf'),
